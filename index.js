@@ -5383,7 +5383,7 @@ axios(url)
 
         $('.copyright', html).each(function() {
             const name = $(this).text()
-            dados.push({
+            teste.push({
                 name
             })
         })
@@ -5420,12 +5420,18 @@ axios(url)
             })
         }) 
 
+        function a() {
+          for (var i = 0; i < 100; i++) {
+            dado = {'nome': nomes[i], 'Taxa de vitórias': taxaVitorias[i], 'Número de vitórias': vitorias[i], 'Número de derrotas': derrotas[i]}
+            dados.push(
+              dado
+            )
+         }
+        }
+
+        a()
+
         console.log(dados)
-        console.log(nomes)
-        console.log(taxaVitorias)
-        console.log(vitorias)
-        console.log(derrotas)
-        console.log(teste)
     }).catch(err => console.log(err))
 
 scraper.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
