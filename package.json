@@ -1,0 +1,25 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "Este é um projeto de web scraper simples utilizando Js, Node e Express, com as libs Axios e Cheerio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Web-Scraper"
+  },
+  "keywords": [
+    "Scraper",
+    "Node"
+  ],
+  "author": "Luis Felipe Fabiane",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1"
+  }
+}
